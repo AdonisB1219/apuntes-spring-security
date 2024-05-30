@@ -1,4 +1,3 @@
 # SPRING SECURITY
 
-En este paso únicamente se agregaron dos propiedades en el application.properties, ahora al tratar de acceder desde el navegador aparece un formulario, cuyo usuario es "adonis" y la contraseña "adonis", como fue definido en las propiedades.
-
+En este paso se agregó un archivo "SecurityConfig", en donde se sobreescribe el SecurityFilterChain, se crea un Bean de un HttpSecurity en el que se indica cuáles serán las url que no necesitan autorizacion y cuáles sí.
