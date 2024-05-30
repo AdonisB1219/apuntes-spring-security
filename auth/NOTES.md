@@ -1,4 +1,4 @@
 # SPRING SECURITY
 
-En esta rama únicamente se agregó la dependencia de Security y Web, se armó un endpoint, y se observa que al tratar de acceder desde el navegador aparece un formulario, cuyo usuario es "user" y la contraseña se genera al levantar el proyecto.
+En este paso únicamente se agregaron dos propiedades en el application.properties, ahora al tratar de acceder desde el navegador aparece un formulario, cuyo usuario es "adonis" y la contraseña "adonis", como fue definido en las propiedades.
 
