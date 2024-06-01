@@ -1,5 +1,7 @@
 # SPRING SECURITY
 
-Se agregaron usuarios en la memoria, se modificó el SecurityConfig para crear beans con los usuarios generados. Acá se creo el objeto User con el método withDefaultPasswordEncoder.
+Ahora se modificó el almacenamiento de los usuarios, se hará en una base de datos. 
 
-El codigo se comentó, porque tambien se puede generar un bean con el password encoder, en este caso se genera una instancia del noOpPasswordEncoder
+La forma más sencilla es utilizando jdbc, se agregó como dependencia junto con el driver de mysql y se generó la tabla según el esquema incluido en jdbc.sql. Después, en la configuracion de seguridad se instancia otro bean, ahora de UserDetailsService, en donde se retorna un JdbcUserDetailsManager().
+
+También se agregaron propiedades que sirven para conectarse ver el flujo de la interacción con la BD.
