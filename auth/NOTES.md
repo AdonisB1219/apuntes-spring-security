@@ -1,3 +1,5 @@
 # SPRING SECURITY
 
-En este paso se agregó un archivo "SecurityConfig", en donde se sobreescribe el SecurityFilterChain, se crea un Bean de un HttpSecurity en el que se indica cuáles serán las url que no necesitan autorizacion y cuáles sí.
+Se agregaron usuarios en la memoria, se modificó el SecurityConfig para crear beans con los usuarios generados. Acá se creo el objeto User con el método withDefaultPasswordEncoder.
+
+El codigo se comentó, porque tambien se puede generar un bean con el password encoder, en este caso se genera una instancia del noOpPasswordEncoder
