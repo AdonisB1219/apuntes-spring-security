@@ -1,7 +1,7 @@
 # SPRING SECURITY
 
-Ahora se modificó el almacenamiento de los usuarios, se hará en una base de datos. 
+Ahora se agregó la dependencia JPA. Luego se hizo una entity que será usada por spring security para hacer la autenticación. Se hizo el repositorio también.
 
-La forma más sencilla es utilizando jdbc, se agregó como dependencia junto con el driver de mysql y se generó la tabla según el esquema incluido en jdbc.sql. Después, en la configuracion de seguridad se instancia otro bean, ahora de UserDetailsService, en donde se retorna un JdbcUserDetailsManager().
+Se eliminó el bean de jdbUserDetailsManager y se hace un UserDetailsService personalizado.
 
-También se agregaron propiedades que sirven para conectarse ver el flujo de la interacción con la BD.
+Se agregó un endpoint para registrar usuarios y es el que quedó libre.
